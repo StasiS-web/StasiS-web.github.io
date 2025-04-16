@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio/Resume</title>
+
+    <!--=============== FAVICON ===============-->
+    <link href="/resources/img/favicon.ico" type="image/ico" sizes="32x32" rel="icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link href="/resources/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--=============== Core theme CSS ===============-->
+    <link href="/resources/css/style.css" rel="stylesheet" />
+</head>
+
+<body id="top-page">
+    <header class="header scroll-header col-6" id="header">
+        <nav class="nav nav-container col-6">
+            <div class="nav_menu col-6">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="ri-home-smile-line"></i>
+                            <span class="nav_name">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="ri-user-line"></i>
+                            <span class="nav_name">
+                                About Me
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="ri-book-2-line"></i>
+                            <span class="nav_name">
+                                Skills
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#qualification" class="nav_link">
+                            <i class="ri-briefcase-4-line"></i>
+                            <span class="nav_name">
+                                Qualification
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="ri-slideshow-4-line"></i>
+                            <span class="nav_name">
+                                Portfolio
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav_link">
+                            <i class="ri-award-fill"></i>
+                            <span class="nav_name">
+                                Certificates
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home_section active" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <span class="home_greeting">Hello, I'm</span>
+                    <h1 class="home_name">Stanislava Stoeva</h1>
+                    <h2 class="home_job_title">Junior Front-End Developer 😊</h2>
+
+                    <div class="home_buttons">
+                        <a href="/resources/pdf/Stanislava's Resume.pdf" download="resume"
+                            class="button button--ghost">
+                            <i class="ri-download-fill"></i> Download Resume 
+                        </a>
+                        <a href="https://codingexpert.medium.com/" target="_blank" class="button btn blog">
+                            <span class="btn_text">Blog</span>
+                            <img src="/resources/img/cone.png" class="btn_cone" alt="cone" />
+                            <img src="/resources/img/torus.png" class="btn_torus" alt="torus" />
+                            <img src="/resources/img/icosahedron.png" class="btn_icosahedron" alt="icosahedron" />
+                            <img src="/resources/img/sphere.png" class="btn_sphere" alt="sphere" />
+                        </a>
+                    </div>
+                    
+                    <a href="#about" class="home_scroll">
+                        <i class="ri-mouse-line home_scroll-icon"></i>
+                        <span class="home_scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about_section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My Intro</span>
+
+            <div class="about_container container grid">
+                <div class="image">
+                    <img src="./resources/img/home-hero.jpeg" alt="me" />
+                </div>
+
+                <div class="about_data">
+                    <div class="about_info" id="info">
+                        <a href="#qualification" class="about_link">
+                            <div class="about_box">
+                                <i class="ri-award-line about_icon"></i>
+                                <h3 class="about_title">Experience</h3>
+                                <span class="about_subtitle count" data-count="3">0</span>
+                                <span class="about_subtitle">Years</span>
+                            </div>
+                        </a>
+                        <a href="#portfolio" class="about_link">
+                            <div class="about_box">
+                                <i class="ri-macbook-line about_icon"></i>
+                                <h3 class="about_title">Projects</h3>
+                                <span class="about_subtitle count" data-count="4">0</span>
+                                <span class="about_subtitle">Completed</span>
+                            </div>
+                        </a>
+                        <a href="#certificates" class="about_link">
+                            <div class="about_box">
+                                <i class="ri-award-fill about_icon"></i>
+                                <h3 class="about_title">Certificates</h3>
+                                <span class="about_subtitle count" data-count="11">0</span>
+                                <span class="about_subtitle">Awarded</span>
+                            </div>
+                        </a>
+                        
+                        <div class="about_box">
+                            <i class="ri-external-link-fill about_icon"></i>
+                            <h3 class="about_title">Follow me</h3>
+                            <div class="about_social">
+                                <a href="https://github.com/StasiS-web" target="_blank" class="about_link">
+                                    <i class="ri-github-line dev_icon"></i>
+                                </a>
+                                <a href="https://codepen.io/StasiS-web" target="_blank" class="about_link">
+                                    <i class="ri-codepen-line dev_icon"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/stanislavastoeva" target="_blank" class="about_link">
+                                    <i class="ri-linkedin-fill about_icon"></i>
+                                </a>
+                                <a href="https://twitter.com/StasiStoeva" target="_blank" class="about_link">
+                                    <i class="ri-twitter-fill about_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="about_box">
+                            <i class="ri-earth-fill about_icon"></i>
+                            <h3 class="about_title">Languages</h3>
+                            <span class="about_subtitile">English,</span>
+                            <br />
+                            <span class="about_subtitile">Spanish,</span>
+                            <br />
+                            <span class="about_subtitile">Bulgarian</span>
+                        </div>
+
+                        <div class="about_box">
+                            <i class="ri-star-smile-line about_icon"></i>
+                            <h3 class="about_title">Interests</h3>
+                            <span class="about_subtitile">Yoga,</span>
+                            <br />
+                            <span class="about_subtitile">Cycling,</span>
+                            <br />
+                            <span class="about_subtitile">Blogging,</span>
+                            <span class="about_subtitile">Reading</span>
+                        </div>
+                    </div>
+
+                    <div class="about_me">
+                        <p class="about_description">
+                         I am an aspiring Front-End Developer with hands-on experience developing websites and applications. I have completed a 3-year 
+                         Web Development course at Software University (SoftUni), where I gained a solid understanding of front-end technologies. 
+                         I enjoy coding and turning my ideas into reality through my projects.
+                        </p> 
+                        <a href="mailto:stanislavastoeva1410@gmail.com" class="button" target="_blank" rel="noopener noreferrer">
+                            <i class="ri-send-plane-fill"></i> Say Hi
+                        </a>                                                                                                                                                                                                                 
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills_section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My abilities</span>
+
+            <div class="skills_container container grid">
+                <div class="skills_content">
+                    <h3 class="skills_title">Front-End Developer</h3>
+                    <div class="skills_box">
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/html-1.svg" alt="skills image" />
+                                    <h3 class="skills_name">HTML5</h3>
+                                    <span class="skills_level">Advanced</span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/css-3.svg" alt="skills image" />
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_level">Intermediate</span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/javascript-1.svg" alt="skills image" />
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/react.svg" alt="skills image" />
+                                    <h3 class="skills_name">ReactJS</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <h3 class="skills_title">Backend Developer</h3>
+                    <div class="skills_box">
+                        <div class="skills_group">
+                            <div class="skills_data  ">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/c--4.svg" alt="skills image" />
+                                    <h3 class="skills_name">CSharp</h3>
+                                    <span class="skills_level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/dot-net-core-7.svg" alt="skills image" />
+                                    <h3 class="skills_name">ASP .NET MVC</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/microsoft-sql-server-1.svg" alt="skills image" />
+                                    <h3 class="skills_name">SQL Server</h3>
+                                    <span class="skills_level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <h3 class="skills_title">Other Tools</h3>
+                    <div class="skills_box">
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" />
+                                    <h3 class="skills_name">Git</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/postman.svg" alt="skills image" />
+                                    <h3 class="skills_name">Postman</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="/resources/img/docker.svg" alt="skills image" />
+                                    <h3 class="skills_name">Docker</h3>
+                                    <span class="skills_level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_blob">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="skills image" />
+                                    <h3 class="skills_name">Canva</h3>
+                                    <span class="skills_level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== QUALIFICATION ===============-->
+        <section class="qualification section timeline" id="qualification">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My Personal Journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
+                        <i class="ri-profile-line qualification_icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification_button button--flex" data-target="#work">
+                        <i class="ri-briefcase-4-line qualification_icon"></i>
+                        Work Experience
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <!--=============== QUALIFICATION CONTENT 1 ===============-->
+                    <div class="timeline" data-content id="education">
+                        <ul>
+                            <li>
+                                <!--=============== QUALIFICATION 8 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">ReactJS</h3>
+                                    <span class="qualification_subtitle">Sofia, Bulgaria - Software University (SoftUni)</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Feb 2023 - Apr 2023
+                                    </time>
+                                </div>
+                            </li>
+
+                            <li>
+                                <!--=============== QUALIFICATION 7 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">JS Advanced</h3>
+                                    <span class="qualification_subtitle">Sofia, Bulgaria - Software University (SoftUni)</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Sep 2022 - Dec 2022
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 6 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">C# Web Developer</h3>
+                                    <span class="qualification_subtitle">Sofia, Bulgaria - Software University (SoftUni)</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Sep 2020 - Feb 2022
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 5 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">HTML & CSS</h3>
+                                    <span class="qualification_subtitle">Sofia, Bulgaria - Software University (SoftUni)</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        May 2020 - Jul 2020
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 4 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">Programming & Coding</h3>
+                                    <span class="qualification_subtitle">Online - Pluralsight</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Nov 2017 - Jul 2019
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 3 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">Programming & Coding</h3>
+                                    <span class="qualification_subtitle">Online - Treehouse</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Nov 2017 - Jul 2019
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 2 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">HNC/HND Computer and Systems Development - Higher Education</h3>
+                                    <span class="qualification_subtitle">Guildford, UK - Guildford College</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Sep 2015 - Jun 2017
+                                    </time>
+                                </div>
+                            </li>
+                            <li>
+                                <!--=============== QUALIFICATION 1 ===============-->
+                                <div class="qualification_data">
+                                    <h3 class="qualification_title">BSc Architectural Design Technology</h3>
+                                    <span class="qualification_subtitle">Coventry, UK - Coventry University</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Sep 2010 - Jul 2014
+                                    </time>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--=============== QUALIFICATION CONTENT 2 ===============-->
+                    <div class="qualification_content" data-content id="work">
+                        <ul>
+                            <li>
+                                <!--=============== QUALIFICATION 1 ===============-->
+                                <div class="qualification_data timeline">
+                                    <h3 class="qualification_title">Web Designer</h3>
+                                    <span class="qualification_subtitle">Freelance</span>
+                                    <time class="qualification_calendar">
+                                        <i class="ri-calendar-2-line"></i>
+                                        Mar 2020 - Present
+                                    </time>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== PORTFOLIO ===============-->
+        <section class="portfolio_section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+
+            <div class="portfolio_container container swiper mySwiper">      
+                <div class="swiper-wrapper">
+                     <!--=============== PROJECT 5 ===============-->
+                     <div class="portfolio_content grid swiper-slide">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Travel-Blog</h3>
+                            <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/v1681889236/portfolio_resume_website/destinations_jwd9sd_mhd2wc.png" alt="Travel Blog" />
+                            <p class="portfolio_descriptions">
+                                Travel Blog is a project created for the project defense of the React Softuni Course (Feb - Mar 2023) as part of the Front-End Module. This project is an React App for people who love to travel. Destination are separated by continents.
+                            </p>
+                            <p class="portfolio_project_technology">
+                                <strong>Technology:</strong> HTML, CSS, ReactJS, Softuni practice server
+                            </p>
+                            <div class="portfolio_buttons">
+                                <a href="https://github.com/StasiS-web/Travel-Blog"
+                                    class="button portfolio_button">
+                                    <i class="ri-git-repository-line"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=============== PROJECT 4 ===============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Purple Spider/Landing Page</h3>
+                            <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--KoLUCqIc--/c_fit,h_350,w_350/v1676666386/portfolio_resume_website/PurpleSpider-LandingPage_yphkvv.png" alt="Purple Spider/Landing Page" />
+                            <p class="portfolio_descriptions">
+                                A simple landing website page. It is an exercise from SoftUni
+                                <em>P.S.: It is a small project. There is navigation but by exercise requirements is not a functional.</em>
+                            </p>
+                            <p class="portfolio_project_technology">
+                                <strong>Technology:</strong> HTML5, CSS, FlexBox, CSS Grid & Media Queries
+                            </p>
+                            <div class="portfolio_buttons">
+                                <a href="https://github.com/StasiS-web/PurpleSpider-LandingPage.github.io"
+                                    class="button portfolio_button">
+                                    <i class="ri-git-repository-line"></i> GitHub
+                                </a>
+                                <a href="https://stasis-web.github.io/PurpleSpider-LandingPage.github.io/index.html" class="button portfolio_button">
+                                    Demo <i class="ri-arrow-right-fill button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=============== PROJECT 3 ===============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Multi-pages Website</h3>
+                            <p class="portfolio_descriptions">
+                                A Multi-page space tourism website. It is user-friendly to use and has a beautiful
+                                interface.
+                                <em>P.S.: In working progress.</em>
+                            </p>
+                            <p class="portfolio_project_technology">
+                                <strong>Technology:</strong> HTML; CSS & JavaScript
+                            </p>
+                            <div class="portfolio_buttons">
+                                <a href="https://github.com/StasiS-web/spaceTourism"
+                                    class="button button--flex button--small portfolio_button">
+                                    <i class="ri-git-repository-line"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!--=============== PROJECT 2 ===============-->
+                     <div class="portfolio_content grid swiper-slide">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Portfolio/Resume website</h3>
+                            <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--UW2Wk2sq--/c_fit,h_350,w_350/v1674791492/portfolio_resume_website/home_xv7dgp.png" alt="Portfolio/Resume Website" />
+                            <p class="portfolio_descriptions">
+                                Personal Portfolio/Resume website with responsive design. 
+                            </p>
+                            <p class="portfolio_project_technology">
+                                <strong>Technology:</strong> HTML; CSS & JavaScript
+                            </p>
+                            <div class="portfolio_buttons">
+                                <a href="https://github.com/StasiS-web/StasiPortfolio.github.io"
+                                    class="button portfolio_button">
+                                    <i class="ri-git-repository-line"></i> GitHub
+                                </a>
+                                <a href="https://stasis-web.github.io/index.html" class="button portfolio_button">
+                                    Demo <i class="ri-arrow-right-fill button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=============== PROJECT 1 ===============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Web Application</h3>
+                            <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--_D3kE-ii--/c_fit,h_450,w_450/v1674490982/portfolio_resume_website/Home_j42wok_lintgw.png" alt="ArtGallery Web Application" />
+                            <p class="portfolio_descriptions">
+                                ArtGallery is a Web Application, and its main idea is to be an app for booking and
+                                sales.
+                                A place where regular users can book an exhibition or buy a painting.
+                            </p>
+                            <p class="portfolio_project_technology">
+                                <strong>Technology:</strong> ASP.NET CORE 6.0 MVC; Entity Framework CORE 6.0; Seeder; Cloudinary; HTML5; CSS; Two-Factor Authentication
+                            </p>
+                            <div class="portfolio_buttons">
+                                <a href="https://github.com/StasiS-web/ArtGallery"
+                                    class="button portfolio_button">
+                                    <i class="ri-git-repository-line"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---=============== ADD PAGINATION ===============-->
+                <div class="swiper-button-prev" onclick="plusSlides(-1)"></div>
+                <div class="swiper-button-next" onclick="plusSlides(1)"></div>
+                <div class="slider_controls"></div>
+            </div>
+        </section>
+
+        <!--=============== CERTIFICATES ===============-->
+        <section class="certificate_sections" id="certificates">
+            <h2 class="section_title">Certificates</h2>
+            <span class="section_subtitle">Educational Awards</span>
+
+            <div class="certificates_container">
+                <div class="certificates_group">
+                    <div class="certificates_content">
+                        <ul>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>Diploma for C# Web Developer</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/certificates/details/201710/afd31bfb" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--I7eUtHtg--/c_fit,h_300,w_300/v1744798998/portfolio_resume_website/C__Web_Developer_e3ccpe.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>Software Engineering and DevOps</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/certificates/details/201202/b3d257d1" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--QMl7hUKd--/c_fit,h_300,w_300/v1744798996/portfolio_resume_website/Software_Engineering_and_DevOps_wvbzxl.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>Containers and Cloud</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/certificates/details/191975/660ac400" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--fCewlvYA--/c_fit,h_300,w_300/v1744798994/portfolio_resume_website/Containers_and_Cloud_l7ew8a.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>ReactJS</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/certificates/details/170052/ed3680c4" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--dI9LDjkM--/c_fit,h_300,w_300/v1682087425/portfolio_resume_website/reactjs_hvhou2.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>HTML & CSS</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/certificates/details/163312/b8170a11" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--7qdPEPwB--/c_fit,h_300,w_300/v1679013797/portfolio_resume_website/html_css_fvk9ds.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                            
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>ASP .NET Advanced</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/153289/15f7b25a" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--sRT32qjv--/c_fit,h_300,w_300/v1674753381/portfolio_resume_website/ASP_.NET_Advanced_ahrpsp.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>JS Application</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/149937/2c763d19" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--qT4G6jiM--/c_fit,h_300,w_300/v1674753214/portfolio_resume_website/JS_Appliccation_eolf7k.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>MS SQL</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/114055/e8049aee" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--7D8RS1Hy--/c_fit,h_300,w_300/v1674753786/portfolio_resume_website/MS_SQL_bj8tc8.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>C# Advanced</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/108747/e9c9a882" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--5T460baQ--/c_fit,h_300,w_300/v1674753553/portfolio_resume_website/C_Advanced_wvbcsj.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>Programming Fundamentals</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/104641/b539051b" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--vEYvioNj--/c_fit,h_300,w_300/v1674754532/portfolio_resume_website/Fundamentals_kiyshm.png" alt="certificate" />
+                                            </a> 
+                                        </div>   
+                                    </div>
+                                </div>       
+                            </li>
+                            <li>
+                                <div class="flip-card">
+                                    <div class="inner-card">
+                                        <div class="front-card">
+                                            <h3>Programming Basic</h3>
+                                        </div>
+                                        <div class="certificates_data back-card">
+                                            <a href="https://softuni.bg/Certificates/Details/89051/f8e281cf" target="_blank"
+                                                class="certificate_link">
+                                                <img src="https://res.cloudinary.com/dnvg6uuxl/image/upload/s--sXUDfNqF--/c_fit,h_300,w_300/v1674754533/portfolio_resume_website/Basic_pqsdmg.png" alt="certificate" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact_section" id="contacts">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="contact_subtitle">Get In Touch</span>
+
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <div class="contact_description">
+                        <p>
+                          <em class="extra_info_title">Want to collaborate with me?</em>
+                          I am open to discussing front-end projects. Please send me a message via  <a href="https://api.whatsapp.com/send/?phone=00447554064762&text=Hello.+If+you+want+to+chat+with+me+feel+free+to+send+me+a+message.&type=phone_number&app_absent=0">
+                            Whatsapp
+                        </a>.
+                        </p>
+                    </div>
+                    <div class="contact_info">
+                        <div class="contact_card">
+                            <i class="ri-map-pin-user-line contact_card-icon"></i>
+                            <h3 class="card-title">Location:</h3>
+                            <span class="card-data">Guildford, UK</span>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="ri-mail-send-line contact_card-icon"></i>
+                            <h3 class="card-title">Email:</h3>
+                            <span class="card-data">stanislavastoeva1410@gmail.com</span>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="ri-phone-line contact_card-icon"></i>
+                            <h3 class="card-title">My Phone:</h3>
+                            <span class="card-data">+44 7554064762</span>
+                            <a href="https://api.whatsapp.com/send/?phone=00447554064762&text=Hello.+If+you+want+to+chat+with+me+feel+free+to+send+me+a+message.&type=phone_number&app_absent=0">
+                                <img src="/resources/img/WhatsAppButtonGreenSmall.svg" alt="whatsapp" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+            <ul class="footer_social">
+                <li>
+                    <a href="https://github.com/StasiS-web" target="_blank" class="footer_social-icon">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/StasiS-web" target="_blank" class="footer_social-icon">
+                        <i class="ri-codepen-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/stanislavastoeva" target="_blank" class="footer_social-icon">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/StasiStoeva" target="_blank" class="footer_social-icon">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer_copy">
+                &#169; 2022 Build by Stanislava Stoeva
+            </span>
+    </footer>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="/resources/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/resources/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="/resources/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/resources/js/main.js"></script>
+</body>
+
+</html>
