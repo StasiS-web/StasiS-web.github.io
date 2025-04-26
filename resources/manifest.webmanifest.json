@@ -1,0 +1,6 @@
+{
+   "name": "Personal Portfolio/Resume",
+   "favocon": [
+    { "src" : "/img/favicon-192.png" , "type": "image/png", "size": "192x192" },
+    { "src" : "/img/faviocn-512.png" , "type": "image/png", "size": "512x512" }
+]}

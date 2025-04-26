@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio/Resume</title>
 
+    <!--=============== GOOGLE FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <!--=============== FAVICON ===============-->
-    <link href="/resources/img/favicon.ico" type="image/ico" sizes="32x32" rel="icon">
+    <link href="/resources/img/favicon.ico" type="image/ico" sizes="any" rel="icon"> <!-- 32x32 -->
+    ⁠⁠<link href="/resources/img/favicon-dev.svg" type="image/svg+xml" rel="icon">⁠
+    ⁠⁠<link href="/resources/img/faviocn-180.png" rel="icon"> <!-- 180×180 --> 
+    <link href="/resources/manifest.webmanifest.json" rel="manifest" >
 
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SWIPER CSS ===============-->
-    <link href="/resources/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
 
     <!--=============== Core theme CSS ===============-->
     <link href="/resources/css/style.css" rel="stylesheet" />
@@ -79,10 +87,10 @@
                     </li>
                 </ul>
             </div>
-
             <!-- Theme change button -->
             <i class="ri-moon-line change-theme" id="theme-button"></i>
         </nav>
+
     </header>
 
     <!--=============== MAIN ===============-->
@@ -93,7 +101,7 @@
                 <div class="home_data">
                     <span class="home_greeting">Hello, I'm</span>
                     <h1 class="home_name">Stanislava Stoeva</h1>
-                    <h2 class="home_job_title">Junior Front-End Developer 😊</h2>
+                    <h2 class="home_job_title">Junior Front-End Developer 🌞</h2>
 
                     <div class="home_buttons">
                         <a href="/resources/pdf/Stanislava's Resume.pdf" download="resume"
@@ -176,22 +184,22 @@
                         <div class="about_box">
                             <i class="ri-earth-fill about_icon"></i>
                             <h3 class="about_title">Languages</h3>
-                            <span class="about_subtitile">English,</span>
+                            <span class="about_subtitle">English,</span>
                             <br />
-                            <span class="about_subtitile">Spanish,</span>
+                            <span class="about_subtitle">Spanish,</span>
                             <br />
-                            <span class="about_subtitile">Bulgarian</span>
+                            <span class="about_subtitle">Bulgarian</span>
                         </div>
 
                         <div class="about_box">
                             <i class="ri-star-smile-line about_icon"></i>
                             <h3 class="about_title">Interests</h3>
-                            <span class="about_subtitile">Yoga,</span>
+                            <span class="about_subtitle">Yoga,</span>
                             <br />
-                            <span class="about_subtitile">Cycling,</span>
+                            <span class="about_subtitle">Cycling,</span>
                             <br />
-                            <span class="about_subtitile">Blogging,</span>
-                            <span class="about_subtitile">Reading</span>
+                            <span class="about_subtitle">Blogging,</span>
+                            <span class="about_subtitle">Reading</span>
                         </div>
                     </div>
 
@@ -574,8 +582,8 @@
                 </div>
 
                 <!---=============== ADD PAGINATION ===============-->
-                <div class="swiper-button-prev" onclick="plusSlides(-1)"></div>
-                <div class="swiper-button-next" onclick="plusSlides(1)"></div>
+                <div class="swiper-button-prev" onClickDown="plusSlides(-1)"></div>
+                <div class="swiper-button-next" onClickUp="plusSlides(1)"></div>
                 <div class="slider_controls"></div>
             </div>
         </section>

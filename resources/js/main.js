@@ -58,12 +58,12 @@ tabs.forEach(tab =>{
   "use strict";
 
   // define variables
-  var items = document.querySelectorAll(".timeline li");
+  let items = document.querySelectorAll(".timeline li");
 
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+    let rect = el.getBoundingClientRect();
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
@@ -74,9 +74,9 @@ tabs.forEach(tab =>{
   }
 
   function callbackFunc() {
-    for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
+    for (const element of items) {
+      if (isElementInViewport(element)) {
+        element.classList.add("in-view");
       }
     }
   }
@@ -89,22 +89,21 @@ tabs.forEach(tab =>{
   
 
 /*=============== PORTFOLIO ===============*/
-var slideElement = document.getElementsByClassName('swiper-slide');
-var slideLength = slideElement.length;
-var paginationElement = document.getElementsByClassName('slider_controls')[0];
+let slideElement = document.getElementsByClassName('swiper-slide');
+let slideLength = slideElement.length;
+let paginationElement = document.getElementsByClassName('slider_controls')[0];
 
-var paginationHTML = [];
+let paginationHTML = [];
 
-for(var i = 0; i < slideLength; i++) {
+for(let  i = 0; i < slideLength; i++) {
   paginationHTML.push('<div class="swiper-pagination dot></div>');
 }
 paginationElement.innerHTML = paginationHTML.join('');
 
-var Swipes = new Swiper(".mySwiper", {
-    effect: "coverflow",
+let Swipes = new Swiper(".mySwiper", {
     loop: true,
     speed: 1000,
-    spaceBetween: 15,
+    spaceBetween: 25,
     freeMode: true,
     mousewheel: true,
     navigation: {
