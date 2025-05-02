@@ -205,10 +205,9 @@ body.light-theme {
   box-shadow: 0 2px 8px rgba(11, 17, 30, 0.1);
 }
 
-.light-theme .skills_content,
+
 .light-theme .contact_card {
   box-shadow: 0 2px 8px rgba(11, 17, 30, 0.1);
-  background-color: var(--container-secondary-color);
 }
 
 .light-theme .portfolio_data,
@@ -1124,7 +1123,6 @@ time {
   justify-content: center;
   height: 25px;
   width: 25px;
-  color: var(--first-color);
   border-radius: 50%;
 }
 
@@ -1460,11 +1458,7 @@ time {
 }
 
 /* For large devices */
-@media screen and (max-width: 1440px) {
-  .change-theme {
-    left: -750px;
-  }
-}
+
 
 @media screen and (min-width: 992px) {
   .container {
