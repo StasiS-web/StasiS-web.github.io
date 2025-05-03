@@ -157,7 +157,9 @@ body.light-theme {
 
 .light-theme .nav,
 .light-theme .skills_blob,
-.light-theme .about_box {
+.light-theme .about_box,
+.light-theme .portfolio_content,
+.light-theme .contact_card {
   background-color: var(--container-secondary-color);
 }
 
@@ -210,7 +212,7 @@ body.light-theme {
   box-shadow: 0 2px 8px rgba(11, 17, 30, 0.1);
 }
 
-.light-theme .portfolio_data,
+
 .light-theme .certificates_data,
 .light-theme .footer_social-icon,
 .light-theme .timeline ul li div,
@@ -525,7 +527,7 @@ body.light-theme {
   transition: 0.4s;
 }
 
-.blog img {
+.blog picture img {
   position: absolute;
   inset: 0;
   margin: auto;
@@ -558,21 +560,25 @@ body.light-theme {
 }
 
 /* View 3D geometric elements */
-.btn:hover img {
+.btn:hover picture img {
   opacity: 1;
 }
+
 
 .btn:hover .btn_cone {
   transform: translate(-38px, -10px) scale(1.2);
 }
 
+
 .btn:hover .btn_torus {
   transform: translate(7px, -32px) scale(1.1);
 }
 
+
 .btn:hover .btn_icosahedron {
   transform: translate(50px, -20px) scale(1.1);
 }
+
 
 .btn:hover .btn_sphere {
   transform: translate(-14px, 20px) scale(1.1);
@@ -583,13 +589,13 @@ body.light-theme {
   row-gap: .5rem;
 }
 
-.about_container .image {
+.about_container .image picture {
   flex: 1 1 40rem;
   padding: 1rem;
   text-align: center;
 }
 
-.about_container .image img {
+.about_container .image picture img {
   height: 35rem;
   box-shadow: 0 0.5rem 1rem rgba(163, 149, 233, 0.4);
   border-top: 3rem solid var(--container-color);
@@ -628,7 +634,7 @@ body.light-theme {
 
 .about_social {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* change into repeat(4, 1fr) to display icons inline */
   gap: .5rem;
   transition: .4s;
   margin-top: .5rem;
@@ -669,6 +675,7 @@ a .about_title:hover{
   margin-bottom: .5rem;
 }
 
+.about_box_external .about_social,
 .about_box .about_subtitle{
   display: inline;
 }
@@ -1591,7 +1598,7 @@ time {
 
 @media only screen and (min-width: 900px) {
   .nav{
-    width: 360px;
+    width: 420px;
   }
 
   .home_buttons {
