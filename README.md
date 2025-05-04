@@ -14,7 +14,7 @@ It is a nice-looking web Portfolio that includes all my skills and knowledge in 
 * [Remix Icon](https://remixicon.com/)
 * [Swiper](https://swiperjs.com/)
 * [Scroll Reveal](https://scrollrevealjs.org/)
-* [Photoleap](https://www.photoleapapp.com/landing/photoleap/v1/?flowId=photoleap_interactive&variantId=plt) - (Mobile Photo Editor to edit some of the images)
+* Canva - (Graphic Design tool to create my about images)
 * [Cloudinary](https://cloudinary.com/) - (to store project images)
 
 ## :computer: [Demo](https://stasis-web.github.io/index.html) :desktop_computer:
