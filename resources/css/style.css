@@ -56,7 +56,7 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  transition: all .2s linear;
+  transition: all .2s linear; 
 }
 
 html {
@@ -148,7 +148,7 @@ body.light-theme {
     the website, in dark theme 
 ==========*/
 .light-theme .scroll-header {
-  box-shadow: 0 1px 4px rgba(3, 3, 3, 0.1);
+  box-shadow: 0 4px 4px rgba(3, 3, 3, 0.3);
 }
 
 .light-theme .nav-menu {
